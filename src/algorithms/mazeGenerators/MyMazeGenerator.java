@@ -8,8 +8,6 @@ import java.util.Random;
 
 public class MyMazeGenerator extends AMazeGenerator {
 
-    public static final char PASSAGE_CHAR = ' ';
-    public static final char WALL_CHAR = '▓';
     @Override
     public Maze generate(int rows, int columns) {
        maze = new Maze(rows,columns);
@@ -51,9 +49,6 @@ public class MyMazeGenerator extends AMazeGenerator {
             }
         }
         maze.endPosition=new Position(x,y);
-
-
     }
-
 
 }
